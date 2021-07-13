@@ -14,6 +14,26 @@ body {
     color: #FFF;
 }
 
+.insta i,
+.pint i {
+    font-size: 20px!important;
+}
+
+.insta i:hover {
+    color: #bc1888!important;
+    font-weight: 700;
+}
+
+.pint i:hover {
+    color: #E60023!important;
+}
+
+.insta i:hover,
+.pint i:hover {
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
 
 /* ==========================================================================
      BANNER PRINCIPAL
@@ -186,6 +206,7 @@ body {
 
 .menu a:hover {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .menu a:active {

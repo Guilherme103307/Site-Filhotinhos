@@ -44,6 +44,7 @@ body {
     background-position: center;
 }
 
+.banner-effect-biblioteca,
 .banner-effect {
     background-color: rgba(0, 0, 0, 0.6);
     overflow: hidden;
@@ -716,6 +717,23 @@ body {
     color: #E878D6;
     transition: background-color 1s;
     text-decoration: none;
+}
+
+
+/* ==========================================================================
+     BIBLIOTECA
+     ========================================================================== */
+
+#biblioteca {
+    /* background-attachment: fixed;*/
+    background-image: url(../imgs/biblioteca-locadora-filhotinhos-do-pop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-effect-biblioteca {
+    height: 400px;
 }
 
 

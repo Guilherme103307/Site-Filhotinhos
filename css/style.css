@@ -3,7 +3,6 @@
 ========================================================================== */
 
 body {
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif!important;
 }
 
@@ -149,6 +148,11 @@ button:focus:not(:focus-visible) {
 
 .altura-text {
     height: 85vh;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none!important;
 }
 
 

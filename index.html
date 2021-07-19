@@ -16,25 +16,503 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
     <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!-- Google Fonts - Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#theMenu">
-    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> 
-        <link itemprop="url" href="imgs/logo-filhotinhos-do-pop.png"> </span>
-
+<body>
     <!----------------------------->
-    <!--    BANNER PRINCIPAL     -->
+    <!--  BANNER PRINCIPAL       -->
     <!----------------------------->
 
-    <h1>Filhotinhos do POP</h1>
+    <div class="container-fluid p-0 banner-principal">
+        <div class="row w-100">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid px-1 px-md-5">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                           <spam> MENU <i class="fas fa-bars"></i> </spam>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container altura-text d-flex">
+            <div class="row my-auto banner-content">
+                <div class="col-12">
+                    <h1 class="title-banner">Filhotinhos do POP</h1>
+                    <p class="desc-banner">Uma casa de festas para você se divertir com amigos. </p>
+                    <a href="#sobre-nos" class="btn-banner"> Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------->
+    <!--         TÓPICOS         -->
+    <!----------------------------->
+
+    <div class="container-fluid p-0 home-feature">
+        <div class="container">
+            <div class="row slider-topicos">
+                <div class="col-12">
+                    <div class=" card-topicos animeTop-1s">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h5 class="title-topicos"> LAN House</h5>
+                        <p>Acesse a internet através de um dos nossos computadores e navegue por tudo que a de novo no mundo pop!</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class=" card-topicos animeTop-2s">
+                        <div class="icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h5 class="title-topicos"> Alugue Roupas</h5>
+                        <p>Escolha sua peça favorita e pague muito barato pra usar tudo de mais novo na moda anos 2000!</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class=" card-topicos animeTop-3s">
+                        <div class="icon">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <h5 class="title-topicos">Lanchonete</h5>
+                        <p>Depois de se divertir com tudo que a Filhotinhos do POP House oferece, passe na nossa lanchonete para matar a fome!</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class=" card-topicos animeTop-4s">
+                        <div class="icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h5 class="title-topicos"> Locadora/biblioteca </h5>
+                        <p>Acesse a internet através de um dos nossos computadores e navegue por tudo que a de novo no mundo pop!</p>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class=" card-topicos animeTop-5s">
+                        <div class="icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h5 class="title-topicos">Sala de Jogos</h5>
+                        <p>Acesse a internet através de um dos nossos computadores e navegue por tudo que a de novo no mundo pop!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------->
+    <!--       Sobre Nós         -->
+    <!----------------------------->
+
+    <div class="container-fluid p-0 bg-dark" id="sobre-nos">
+        <div class="container mt-5 py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 my-auto animeLeft">
+                    <h4 class="title-sobre">Sobre Nós</h4>
+                    <p>
+                        Filhotihos do POP é uma casa de eventos que surgiu de uma ideia de quatro amigos fãns da Britney Spears e Lady Gaga. e hoje já conta com 5 serviços principais, sendo elas: LAN House, Lanchonete, Karaoke, Aluguel de Roupa e ...
+                    </p>
+                    <a href="https://www.instagram.com/filhotinhosdopop/" class="btn-insta"> Siga nosso Instagram</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 bg-logo animeRight"></div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------->
+    <!---  ALUGUE ROUPAS AGORA   -->
+    <!----------------------------->
+
+    <div class="container-fluid bg-roupas p-0" id="alugueRoupas">
+        <div class="filter-roupas row m-0 justify-content-center py-3 py-md-0">
+            <div class="col-12 col-md-6 col-lg-3 bg-all-jeans animarTop"></div>
+            <div class="col-12 col-md-6 col-lg-3 my-md-auto div-all-jeans animar">
+                <h3 class="title-roupas">Alugue já seu look!</h3>
+                <p class="py-1 py-md-3">Já teve vontade de andar na moda gastando pouco? Aqui Você encontra os mais variados tipos de peças pra você escolher e arrasar! </p>
+                <a href="#contato" class="btn-roupas">Faça um Orçamento</a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------->
+    <!--       Lanchonete        -->
+    <!----------------------------->
+
+    <section class="section-lanchonete my-2" id="lanchonete">
+        <div class="container">
+            <div class="row px-4">
+                <div class="col-12 lanchonete-card anime">
+                    <div class="img-burguer anime-init"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <h2 class="title-lanchonete">Lanchonete</h2>
+                            <p class="text-center">Experimente um dos nossos deliciosos lanches! Além de oferecer produtos deliciosos, nossa lanchonete é composta por elementos tematicos pra você se divertir!</p>
+                        </div>
+                    </div>
+                    <div class="img-batatas anime"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------->
+    <!--       Sala de Jogos     -->
+    <!----------------------------->
+
+    <section class="container-fluid py-3">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12">
+                    <h2 class="title-jogos">Sala de Jogos</h2>
+                    <div class="borda-bibli borda-jogo"></div>
+                </div>
+            </div>
+            <div class="row slider-jogos">
+                <a href="#" class="col-12 img-jogos theSims">
+                    <div class="filter-jogos">
+                        <div class="logo-jogo theSimsLogo"></div>
+                    </div>
+                </a>
+                <a href="#" class="col-12 img-jogos simCity">
+                    <div class="filter-jogos">
+                        <div class="logo-jogo simCityLogo"></div>
+                    </div>
+                </a>
+                <a href="#" class="col-12 img-jogos rollerCoaster">
+                    <div class="filter-jogos">
+                        <div class="logo-jogo rollearCoasterLogo"></div>
+                    </div>
+                </a>
+                <a href="#" class="col-12 img-jogos videoGames">
+                    <div class="filter-jogos d-flex">
+                        <div class="video-logo">
+                            <i class="fas fa-gamepad "></i>
+                            <p>Vídeo Games</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="col-12 img-jogos jogosTabuleiro">
+                    <div class="filter-jogos">
+                        <div class="logo-jogo jogosTabuleiroLogo">
+                        </div>
+                        <p class="text-center">Jogos de jogosTabuleiro</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------->
+    <!--       Biblioteca        -->
+    <!----------------------------->
+
+    <section class="container-fluid p-0" id="biblioteca">
+        <div class="banner-effect-biblioteca p-3">
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0">Biblioteca e Locadora</h2>
+                        <div class="borda-bibli"></div>
+                        <p class="py-3">Faça uma carteirinha e tenha direito a pegar até 3 volumes simultaneamnete. </br>Contamos com uma alta variedade de livros e DVD's para você escolher: Para todos os gostos e idades</p>
+
+                        <h5>Ainda não é sócio?</h5>
+                        <a href="#cotas" class="btn-banner"> Assine já!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------->
+    <!--       Cotas        -->
+    <!----------------------------->
+
+    <section class="section-cotas my-2" id="cotas">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12">
+                    <h2 class="title-jogos">Assine um dos Planos!</h2>
+                    <div class="borda-bibli borda-jogo"></div>
+                </div>
+            </div>
+            <div class="row slider-cotas px-4">
+                <div class="col-12 lanchonete-card anime">
+                    <div class="top-tile">
+                        Semanal
+                    </div>
+                    <ul class="my-4">
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado à LAN House
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado ao Salão de Jogos
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo de 1 Livro
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo de 2 Filmes
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> 3 Peças do Aluguel de Roupas
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contatos.html" class="btn-cotas">Assinar Plano Semanal</a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 lanchonete-card anime">
+                    <div class="top-tile">
+                        Mensal
+                    </div>
+                    <ul class="my-4">
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado à LAN House
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado ao Salão de Jogos
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo de 1 Livro
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo de 2 Filmes
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> 3 Peças do Aluguel de Roupas por Semana
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contatos.html" class="btn-cotas">Assinar Plano Semanal</a>
+                    </div>
+                </div>
+
+                <div class="col-12 lanchonete-card anime">
+                    <div class="top-tile">
+                        Anual
+                    </div>
+                    <ul class="my-4">
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado à LAN House
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Acesso ilimitado ao Salão de Jogos
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo ilimitado de Livros
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Empréstimo ilimitado de Filmes
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Aluguel limitado de Roupas
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contatos.html" class="btn-cotas">Assinar Plano Semanal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------->
+    <!--         Rodapé          -->
+    <!----------------------------->
+    <div class="container-fluid bg-cinza">
+        <div class="container">
+            <div class="row py-3">
+                <div class="redes-footer">
+                    <a href="https://www.instagram.com/filhotinhosdopop/" class="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="https://br.pinterest.com/filhotinhosdopop" class="pint"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="mailto:lgppdesign@gmail.com" class="mail"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col-12 text-center py-2">
+                    <p>© Copyright 2021 | Desenvolvido com <i class="fas fa-heart"></i> por Filhotinhos do POP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------->
+    <!--        javaScript       -->
+    <!----------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" />
+
+    <script>
+        var root = document.documentElement;
+        root.className += 'js';
+
+        function boxTop(idBox) {
+            var boxOffset = $(idBox).offset().top;
+            return boxOffset;
+        }
+
+        $(document).ready(function() {
+            var $targetDown = $('.animar'),
+                $targetTop = $('.animarTop'),
+                $targetLeft = $('.animeLeft'),
+                $targetRight = $('.animeRight'),
+                $target = $('.anime'),
+                animationClass = 'anime-init',
+                windowHeight = $(window).height(),
+                offset = windowHeight - (windowHeight / 4);
+
+            function animeScroll() {
+
+                var documentTop = $(document).scrollTop();
+
+                $targetDown.each(function() {
+                    if (documentTop > boxTop(this) - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+
+                $targetTop.each(function() {
+                    if (documentTop > boxTop(this) - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+
+                $targetLeft.each(function() {
+                    if (documentTop > boxTop(this) - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+
+                $targetRight.each(function() {
+                    if (documentTop > boxTop(this) - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+
+                $target.each(function() {
+                    if (documentTop > boxTop(this) - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+            }
+            animeScroll();
+            $(document).scroll(function() {
+                setTimeout(function() {
+                    animeScroll()
+                }, 150);
+            });
+        });
+    </script>
+
+    <script>
+        $('.slider-topicos').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1
+                }
+            }]
+        });
+
+        $('.slider-jogos').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1
+                }
+            }]
+        });
+
+        $('.slider-cotas').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 1
+                }
+            }]
+        });
+    </script>
 </body>
 
 </html>

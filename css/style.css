@@ -771,8 +771,7 @@ a:hover .filter-jogos {
         height: 200px!important;
     }
     .img-batatas {
-        height: 200px!important;
-        margin-top: -328px!important;
+        display: none!important;
     }
     .img-burguer {
         top: 116px!important;

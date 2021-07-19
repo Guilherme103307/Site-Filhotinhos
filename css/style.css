@@ -6,6 +6,11 @@ body {
     font-family: 'Poppins', sans-serif!important;
 }
 
+.slick-prev,
+.slick-next {
+    display: none!important;
+}
+
  ::-webkit-scrollbar {
     width: 10px;
     height: 10px;

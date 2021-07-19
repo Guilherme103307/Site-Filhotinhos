@@ -1,730 +1,790 @@
-    /* ==========================================================================
+/* ==========================================================================
     GERAL
 ========================================================================== */
-    
-    body {
-        overflow-x: hidden;
-        font-family: 'Poppins', sans-serif!important;
-    }
-    
-     ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
-    
-     ::-webkit-scrollbar-track {
-        background: #333;
-    }
-    
-     ::-webkit-scrollbar-thumb {
-        background: #5924EC;
-    }
-    
-    .navbar-collapse {
-        margin-left: 20px;
-    }
-    
-    a,
-    .navbar,
-    .navbar a,
-    .navbar-toggler,
-    .banner-content,
-    .btn-banner,
-    .btn-insta,
-    #sobre-nos p,
-    .icon i,
-    .filter-roupas,
-    .btn-roupas,
-    #biblioteca,
-    .bg-cinza,
-    .top-tile {
-        color: #FFF!important;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    /* ==========================================================================
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+ ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #333;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #5924EC;
+}
+
+.navbar-collapse {
+    margin-left: 20px;
+}
+
+a,
+.navbar,
+.navbar a,
+.navbar-toggler,
+.banner-content,
+.btn-banner,
+.btn-insta,
+#sobre-nos p,
+.icon i,
+.filter-roupas,
+.btn-roupas,
+#biblioteca,
+.bg-cinza,
+.top-tile {
+    color: #FFF!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
       BANNER
       ========================================================================== */
-    
-    .banner-principal {
-        background-image: url(../imgs/bg-filhotinhos-do-pop.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
-    
-    button:focus:not(:focus-visible) {
-        outline: none;
-    }
-    
-    .navbar-toggler:focus {
-        box-shadow: 0 0 0 0!important;
-    }
-    
-    .insta i,
-    .pint i {
-        font-size: 20px!important;
-    }
-    
-    .insta i:hover {
-        color: #bc1888!important;
-        font-weight: 700;
-    }
-    
-    .pint i:hover {
-        color: #E60023!important;
-    }
-    
-    .insta i:hover,
-    .pint i:hover {
-        font-weight: 700;
-        transition: all 0.5s;
-    }
-    
-    .title-banner {
-        font-size: 64px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-top: 0;
-        letter-spacing: -2px;
-        margin-bottom: 25px;
-        text-shadow: 2px 1px 5px #000;
-    }
-    
-    .btn-banner {
-        background-color: #5924EC;
-        border: 2px solid #5924EC;
-    }
-    
-    .btn-insta {
-        background-color: #E878D6;
-        border: 2px solid #E878D6;
-    }
-    
-    .btn-banner,
-    .btn-insta {
-        border-radius: 0;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 3;
-        padding: 5px 21px;
-        outline: none;
-    }
-    
-    .btn-banner:hover,
-    .btn-insta:hover {
-        background: transparent;
-        outline: none;
-        transition: all 0.3s;
-        text-decoration: none;
-    }
-    
-    .btn-banner:hover {
-        color: #5924EC!important;
-    }
-    
-    .btn-insta:hover {
-        color: #E878D6!important;
-    }
-    
-    .muito-mais {
-        color: #5924EC;
-        text-align: center;
-    }
-    
-    .altura-text {
-        height: 85vh;
-    }
-    /* ==========================================================================
+
+.banner-principal {
+    background-image: url(../imgs/bg-filhotinhos-do-pop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0!important;
+}
+
+.insta i,
+.pint i {
+    font-size: 20px!important;
+}
+
+.insta i:hover {
+    color: #bc1888!important;
+    font-weight: 700;
+}
+
+.pint i:hover {
+    color: #E60023!important;
+}
+
+.mail i:hover {
+    color: #dc3545!important;
+}
+
+.insta i:hover,
+.pint i:hover,
+.mail i:hover {
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.lanchonete-card ul {
+    min-height: 260px;
+    display: grid;
+}
+
+.title-banner {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 0;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 1px 5px #000;
+}
+
+.btn-banner {
+    background-color: #5924EC;
+    border: 2px solid #5924EC;
+}
+
+.btn-insta {
+    background-color: #E878D6;
+    border: 2px solid #E878D6;
+}
+
+.btn-banner,
+.btn-insta {
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3;
+    padding: 5px 21px;
+    outline: none;
+}
+
+.btn-banner:hover,
+.btn-insta:hover {
+    background: transparent;
+    outline: none;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn-banner:hover {
+    color: #5924EC!important;
+}
+
+.btn-insta:hover {
+    color: #E878D6!important;
+}
+
+.muito-mais {
+    color: #5924EC;
+    text-align: center;
+}
+
+.altura-text {
+    height: 85vh;
+}
+
+
+/* ==========================================================================
      Sobre Nós  
      ========================================================================== */
-    
-    .bg-logo {
-        background-image: url(../imgs/logo-filhotinhos-do-pop.png);
-        height: 400px;
-        background-position: right;
-        background-repeat: no-repeat;
-        margin: auto 0;
-        background-size: contain;
-    }
-    
-    .title-sobre {
-        color: #E878D6;
-        font-weight: 700;
-        padding-bottom: 20px;
-    }
-    /* ==========================================================================
+
+.bg-logo {
+    background-image: url(../imgs/logo-filhotinhos-do-pop.png);
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: auto 0;
+    background-size: contain;
+}
+
+.title-sobre {
+    color: #E878D6;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+
+/* ==========================================================================
      ROUPAS
      ========================================================================== */
-    
-    .filter-roupas {
-        height: 350px;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    
-    .bg-roupas {
-        background-image: url(../imgs/boutique-filhotinhos-do-pop.jpg);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: auto 0;
-        background-size: cover;
-    }
-    
-    .bg-all-jeans {
-        background-image: url(../imgs/all-jeans.png);
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 450px;
-        margin-top: -70px;
-    }
-    
-    .title-roupas {
-        color: #E878D6;
-        font-weight: 800;
-    }
-    
-    .btn-roupas {
-        background-color: #E878D6;
-        border: 2px solid #E878D6;
-        padding: 10px;
-        font-weight: 600;
-    }
-    
-    .btn-roupas:hover {
-        background-color: transparent;
-        color: #E878D6;
-        transition: background-color 1s;
-        text-decoration: none;
-    }
-    /* ==========================================================================
+
+.filter-roupas {
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-roupas {
+    background-image: url(../imgs/boutique-filhotinhos-do-pop.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto 0;
+    background-size: cover;
+}
+
+.bg-all-jeans {
+    background-image: url(../imgs/all-jeans.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    margin-bottom: 0;
+}
+
+.title-roupas {
+    color: #E878D6;
+    font-weight: 800;
+}
+
+.btn-roupas {
+    background-color: #E878D6;
+    border: 2px solid #E878D6;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-roupas:hover {
+    background-color: transparent;
+    color: #E878D6;
+    transition: background-color 1s;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
      Lanchonete
      ========================================================================== */
-    
-    .img-burguer,
-    .img-batatas {
-        height: 400px;
-        width: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: auto 0;
-        position: absolute;
-        background-size: contain;
-    }
-    
-    .img-burguer {
-        background-image: url(../imgs/burger-filhotihos-do-pop.png);
-        left: -199px;
-        transform: rotate( 10deg)!important;
-    }
-    
-    .img-batatas {
-        background-image: url(../imgs/batatas-filhotinhs-do-pop.png);
-        right: -218px;
-        margin-top: -388px;
-        transform: rotate( -10deg)!important;
-    }
-    
-    .lanchonete-card {
-        box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        height: 250px;
-    }
-    
-    .title-lanchonete {
-        color: #5924EC;
-        font-weight: 700;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    /* ==========================================================================
+
+.img-burguer,
+.img-batatas {
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto 0;
+    position: absolute;
+    background-size: contain;
+}
+
+.img-burguer {
+    background-image: url(../imgs/burger-filhotihos-do-pop.png);
+    left: -199px;
+    transform: rotate( 10deg)!important;
+}
+
+.img-batatas {
+    background-image: url(../imgs/batatas-filhotinhs-do-pop.png);
+    right: -218px;
+    margin-top: -388px;
+    transform: rotate( -10deg)!important;
+}
+
+.lanchonete-card {
+    box-shadow: 0 2px 48px 0 rgb(0 0 0 / 10%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 250px;
+}
+
+.title-lanchonete {
+    color: #5924EC;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-lanchonete {
+    overflow-x: clip;
+}
+
+
+/* ==========================================================================
      ANIMAÇÕES
      ========================================================================== */
-    
-    .banner2 {
-        animation: fade 500ms;
-        animation-delay: 800ms;
-    }
-    
-    @keyframes fade {
-        from {
-            opacity: 0;
-            transform: scale(0.9);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    
-    .navbar {
-        animation: move 400ms;
-        animation-delay: 200ms;
-        animation-fill-mode: none;
-    }
-    
-    .box {
-        width: 250px;
-        height: 250px;
-        border-radius: 5px;
-        margin: 0 auto 160px auto;
+
+.banner2 {
+    animation: fade 500ms;
+    animation-delay: 800ms;
+}
+
+@keyframes fade {
+    from {
         opacity: 0;
-        transform: translate(-50px, 0px);
-        transition: .3s all ease;
+        transform: scale(0.9);
     }
-    
-    .title-banner,
-    .desc-banner,
-    .btn-banner {
-        animation: move 400ms;
-        animation-fill-mode: backwards;
-    }
-    
-    .title-banner {
-        animation-delay: 250ms;
-    }
-    
-    .desc-banner {
-        animation-delay: 300ms;
-    }
-    
-    .btn-banner {
-        animation-delay: 400ms;
-    }
-    
-    @keyframes move {
-        from {
-            opacity: 0;
-            transform: translateX(-35%);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    .animeRight {
-        animation: go-back 1s;
-    }
-    
-    .animeTop-1s {
-        animation: go-top 1s;
-    }
-    
-    .animeTop-2s {
-        animation: go-top 1.5s;
-    }
-    
-    .animeTop-3s {
-        animation: go-top 1.75s;
-    }
-    
-    .animeTop-4s {
-        animation: go-top 1.8s;
-    }
-    
-    .animeTop-3s {
-        animation: go-top 2s;
-    }
-    
-    .animeBottom {
-        animation: go-bottom 1s;
-    }
-    
-    .removeClass {
-        opacity: 0;
-    }
-    
-    @keyframes go-back {
-        from {
-            transform: translateX(100px);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes go-bottom {
-        from {
-            transform: translateY(-100px);
-        }
-        to {
-            transform: translateY(0);
-        }
-    }
-    
-    @keyframes go-top {
-        from {
-            transform: translateY(100px);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes go {
-        from {
-            transform: translateX(0px);
-        }
-        to {
-            transform: translateX(100px);
-        }
-    }
-    
-    @media only screen and (min-width: 992px) {
-        .js .animeLeft {
-            opacity: 0;
-            transform: translate3D(-100px, 0, 0);
-        }
-        .js .animeRight {
-            opacity: 0;
-            transform: translate3D(100px, 0, 0);
-        }
-    }
-    
-    .js .animar {
-        opacity: 0;
-        transform: translate3D(0, -50px, 0);
-    }
-    
-    .animarTop {
-        animation: go-top 1.5s;
-    }
-    
-    .animarDown {
-        animation: go 1.5s;
-    }
-    
-    .js .animeDown {
-        opacity: 0;
-        transform: translate3D(0, 50px, 0);
-    }
-    
-    .js .anime {
-        opacity: 0;
-        transform: translate3D(0, 0, 250px);
-    }
-    
-    .js .anime-init {
+    to {
         opacity: 1;
-        transform: translate3D(0, 0, 0);
-        transition: .8s all ease;
+        transform: scale(1);
     }
-    
-    .home-feature {
-        margin-top: -80px;
+}
+
+.navbar {
+    animation: move 400ms;
+    animation-delay: 200ms;
+    animation-fill-mode: none;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 0 auto 160px auto;
+    opacity: 0;
+    transform: translate(-50px, 0px);
+    transition: .3s all ease;
+}
+
+.title-banner,
+.desc-banner,
+.btn-banner {
+    animation: move 400ms;
+    animation-fill-mode: backwards;
+}
+
+.title-banner {
+    animation-delay: 250ms;
+}
+
+.desc-banner {
+    animation-delay: 300ms;
+}
+
+.btn-banner {
+    animation-delay: 400ms;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-35%);
     }
-    
-    .card-topicos {
-        cursor: pointer;
-        display: block;
-        background: #FFF;
-        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        padding: 30px;
-        text-align: center;
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-        position: relative;
-        margin: 20px;
-        min-height: 340px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    
-    .home-feature {
-        padding-bottom: 0px;
-        padding-top: 30px;
-        z-index: 9;
-        margin-top: -150px;
+}
+
+.animeRight {
+    animation: go-back 1s;
+}
+
+.animeTop-1s {
+    animation: go-top 1s;
+}
+
+.animeTop-2s {
+    animation: go-top 1.5s;
+}
+
+.animeTop-3s {
+    animation: go-top 1.75s;
+}
+
+.animeTop-4s {
+    animation: go-top 1.8s;
+}
+
+.animeTop-3s {
+    animation: go-top 2s;
+}
+
+.animeBottom {
+    animation: go-bottom 1s;
+}
+
+.removeClass {
+    opacity: 0;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
     }
-    
-    .card-topicos:hover .icon {
-        background-color: #ff589e;
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
-    
-    .icon {
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-        width: 90px;
-        height: 90px;
-        line-height: 90px;
-        margin: auto;
-        position: relative;
-        margin-bottom: 30px;
-        background: #8261ee;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
+}
+
+@keyframes go-bottom {
+    from {
+        transform: translateY(-100px);
     }
-    
-    .icon i {
-        font-size: 30px;
-        line-height: inherit;
+    to {
+        transform: translateY(0);
     }
-    
-    .title-topicos {
-        font-weight: 500;
-        font-size: 18px;
-        color: #1e1e1e;
-        letter-spacing: 0.7px;
-        margin-bottom: 15px;
-        position: relative;
+}
+
+@keyframes go-top {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
     }
-    /* ==========================================================================
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes go {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .js .animeLeft {
+        opacity: 0;
+        transform: translate3D(-100px, 0, 0);
+    }
+    .js .animeRight {
+        opacity: 0;
+        transform: translate3D(100px, 0, 0);
+    }
+}
+
+.js .animar {
+    opacity: 0;
+    transform: translate3D(0, -50px, 0);
+}
+
+.animarTop {
+    animation: go-top 1.5s;
+}
+
+.animarDown {
+    animation: go 1.5s;
+}
+
+.js .animeDown {
+    opacity: 0;
+    transform: translate3D(0, 50px, 0);
+}
+
+.js .anime {
+    opacity: 0;
+    transform: translate3D(0, 0, 250px);
+}
+
+.js .anime-init {
+    opacity: 1;
+    transform: translate3D(0, 0, 0);
+    transition: .8s all ease;
+}
+
+.home-feature {
+    margin-top: -80px;
+}
+
+.card-topicos {
+    cursor: pointer;
+    display: block;
+    background: #FFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin: 20px;
+    min-height: 370px;
+}
+
+.home-feature {
+    padding-bottom: 0px;
+    padding-top: 30px;
+    z-index: 9;
+    margin-top: -150px;
+}
+
+.card-topicos:hover .icon {
+    background-color: #ff589e;
+}
+
+.icon {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 30px;
+    background: #8261ee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.icon i {
+    font-size: 30px;
+    line-height: inherit;
+}
+
+.title-topicos {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1e1e1e;
+    letter-spacing: 0.7px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+/* ==========================================================================
      BIBLIOTECA
      ========================================================================== */
-    
-    #biblioteca {
-        /* background-attachment: fixed;*/
-        background-image: url(../imgs/biblioteca-locadora-filhotinhos-do-pop.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .banner-effect-biblioteca {
-        height: 400px;
-        background-color: rgba(0, 0, 0, 0.6);
-        overflow: hidden;
-        display: flex;
-    }
-    
-    .borda-bibli,
-    .borda-jogo {
-        width: 200px;
-        height: 3px;
-        margin: auto;
-        background-color: #5924EC;
-    }
-    
-    .borda-bibli {
-        background-color: #5924EC;
-    }
-    /* ==========================================================================
+
+#biblioteca {
+    /* background-attachment: fixed;*/
+    background-image: url(../imgs/biblioteca-locadora-filhotinhos-do-pop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-effect-biblioteca {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: flex;
+}
+
+.borda-bibli,
+.borda-jogo {
+    width: 200px;
+    height: 3px;
+    margin: auto;
+    background-color: #5924EC;
+}
+
+.borda-bibli {
+    background-color: #5924EC;
+}
+
+.nav-item .insta,
+.nav-item .pint,
+.nav-item .mail {
+    line-height: 44px;
+    padding-right: 10px;
+}
+
+.nav-link:hover {
+    color: #E8C162!important;
+}
+
+
+/* ==========================================================================
       COTAS
       ========================================================================== */
-    
-    #cotas .lanchonete-card {
-        padding: 0;
-        margin: 20px;
-    }
-    
-    .top-tile {
-        background-color: #91CBCC;
-        font-weight: 700;
-        height: 40px;
-        text-align: center;
-        line-height: 38px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    
-    .lanchonete-card li {
-        list-style: none;
-    }
-    
-    .fa-check {
-        color: #91CBCC;
-    }
-    
-    .btn-cotas {
-        background-color: #91CBCC;
-        justify-content: center;
-        margin: auto;
-        padding: 5px 20px;
-        margin-bottom: 20px;
-    }
-    
-    .btn-cotas:hover {
-        background-color: #E8C162;
-        transition: background-color 0.5s;
-    }
-    /* ==========================================================================
+
+#cotas .lanchonete-card {
+    padding: 0;
+    margin: 20px;
+}
+
+.top-tile {
+    background-color: #91CBCC;
+    font-weight: 700;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.lanchonete-card li {
+    list-style: none;
+}
+
+.fa-check {
+    color: #91CBCC;
+}
+
+.btn-cotas {
+    background-color: #91CBCC;
+    justify-content: center;
+    margin: auto;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+.btn-cotas:hover {
+    background-color: #E8C162;
+    transition: background-color 0.5s;
+}
+
+
+/* ==========================================================================
       JOGOS
       ========================================================================== */
-    
-    a:hover .filter-jogos {
-        opacity: 1;
-        transition: visibility 0s, opacity 0.5s linear;
-    }
-    
-    .img-jogos {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 20px;
-        margin: 20px;
-        height: 320px!important;
-    }
-    
-    .logo-jogo {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        height: 100%;
-        width: auto;
-    }
-    
-    .filter-jogos {
-        height: 320px!important;
-        border-radius: 20px;
-        background-color: rgba(0, 0, 0, 0.6);
-        opacity: 0;
-    }
-    
-    .theSims {
-        background-image: url(../imgs/the-sims-filhotinhos-do-pop.jpg);
-    }
-    
-    .theSimsLogo {
-        background-image: url(../imgs/the-sims-logo-filhotinhos-do-pop.png);
-    }
-    
-    .simCity {
-        background-image: url(../imgs/simcity-filhotinhos-do-pop.jpg);
-    }
-    
-    .simCityLogo {
-        background-image: url(../imgs/simcity-logo-filhotinhos-do-pop.webp);
-    }
-    
-    .rollerCoaster {
-        background-image: url(../imgs/roller-coaster-filhotinhos-do-pop.jpg);
-    }
-    
-    .rollearCoasterLogo {
-        background-image: url(../imgs/rollear-coaster-logo-filhotinhos-do-pop.png);
-    }
-    
-    .videoGames {
-        background-image: url(../imgs/videogames-filhotinhos-do-pop.jpg);
-    }
-    
-    .video-logo {
-        margin: auto;
-        text-align: center;
-    }
-    
-    .video-logo i {
-        color: #bc1888;
-        font-size: 40px;
-    }
-    
-    .jogosTabuleiro {
-        background-image: url(../imgs/jogos-de-tabuleiro-filhotinhos-do-pop.jpg);
-    }
-    
-    .jogosTabuleiroLogo {
-        background-image: url(../imgs/dados-logo-filhotinhos-do-pop.png);
-    }
-    
-    .title-jogos {
-        color: #E8C162;
-        font-weight: 700;
-        text-align: center;
-    }
-    
-    .borda-jogo {
-        background-color: #E8C162;
-    }
-    /* ==========================================================================
+
+a:hover .filter-jogos {
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.img-jogos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 20px;
+    height: 320px!important;
+    cursor: pointer;
+}
+
+.logo-jogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+.filter-jogos {
+    height: 320px!important;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+.theSims {
+    background-image: url(../imgs/the-sims-filhotinhos-do-pop.jpg);
+}
+
+.theSimsLogo {
+    background-image: url(../imgs/the-sims-logo-filhotinhos-do-pop.png);
+}
+
+.simCity {
+    background-image: url(../imgs/simcity-filhotinhos-do-pop.jpg);
+}
+
+.simCityLogo {
+    background-image: url(../imgs/simcity-logo-filhotinhos-do-pop.webp);
+}
+
+.rollerCoaster {
+    background-image: url(../imgs/roller-coaster-filhotinhos-do-pop.jpg);
+}
+
+.rollearCoasterLogo {
+    background-image: url(../imgs/rollear-coaster-logo-filhotinhos-do-pop.png);
+}
+
+.videoGames {
+    background-image: url(../imgs/videogames-filhotinhos-do-pop.jpg);
+}
+
+.video-logo {
+    margin: auto;
+    text-align: center;
+}
+
+.video-logo i {
+    color: #bc1888;
+    font-size: 40px;
+}
+
+.jogosTabuleiro {
+    background-image: url(../imgs/jogos-de-tabuleiro-filhotinhos-do-pop.jpg);
+}
+
+.jogosTabuleiroLogo {
+    background-image: url(../imgs/dados-logo-filhotinhos-do-pop.png);
+}
+
+.title-jogos {
+    color: #E8C162;
+    font-weight: 700;
+    text-align: center;
+}
+
+.borda-jogo {
+    background-color: #E8C162;
+}
+
+
+/* ==========================================================================
       FOOTER
       ========================================================================== */
-    
-    .bg-cinza {
-        background-color: #3C3D41;
-    }
-    
-    .redes-footer {
-        text-align: center;
-    }
-    
-    .redes-footer i {
-        padding: 5px;
-    }
-    /* ==========================================================================
+
+.fa-heart {
+    color: #dc3545;
+}
+
+.bg-cinza {
+    background-color: #3C3D41;
+}
+
+.redes-footer {
+    text-align: center;
+}
+
+.redes-footer i {
+    padding: 5px;
+}
+
+
+/* ==========================================================================
       MEDIA
       ========================================================================== */
-    
-    @media only screen and (min-width: 992px) {
-        .navbar {
-            float: right;
-        }
-        .lanchonete-card {
-            padding: 33px;
-            margin-bottom: 100px;
-            margin-top: 100px;
-        }
+
+@media only screen and (max-width: 768px) {
+    .filter-roupas {
+        height: 560px!important;
     }
-    
-    @media only screen and (max-width: 991px) {
-        .banner-principal>.row {
-            background-image: linear-gradient( 180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        }
-        .navbar-toggler {
-            width: inherit;
-        }
-        .navbar-toggler>spam {
-            float: right;
-        }
-        .title-banner {
-            font-size: 50px;
-            word-break: break-word;
-        }
-        .altura-text {
-            height: 76vh;
-        }
-        .home-feature {
-            margin-top: -70px;
-        }
-        .bg-logo {
-            height: 290px;
-        }
-        .bg-all-jeans {
-            height: 300px!important;
-            margin-top: -20px!important;
-        }
-        .filter-roupas {
-            height: 560px!important;
-        }
-        .div-all-jeans {
-            justify-content: center;
-            text-align: center;
-        }
-        .img-burguer {
-            height: 200px!important;
-        }
-        .img-batatas {
-            display: none;
-        }
-        .img-burguer {
-            top: 116px!important;
-            left: -230px;
-            transform: rotate( 3deg)!important;
-        }
-        #sobre-nos {
-            text-align: center;
-        }
-        .lanchonete-card {
-            margin-bottom: 20px;
-            margin-top: 20px;
-            padding: 0px 25px;
-        }
+}
+
+@media only screen and (min-width: 767px) {
+    .bg-all-jeans {
+        height: auto!important;
     }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar {
+        float: right;
+    }
+    .lanchonete-card {
+        padding: 33px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner-content {
+        position: absolute;
+        top: 13rem;
+    }
+    .banner-principal>.row {
+        background-image: linear-gradient( 180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+    .navbar-toggler {
+        width: inherit;
+    }
+    .navbar-toggler>spam {
+        float: right;
+    }
+    .title-banner {
+        font-size: 50px;
+        word-break: break-word;
+    }
+    .altura-text {
+        height: 76vh;
+    }
+    .home-feature {
+        margin-top: -110px;
+    }
+    .bg-logo {
+        height: 290px;
+    }
+    .div-all-jeans {
+        justify-content: center;
+        text-align: center;
+    }
+    .img-burguer {
+        height: 200px!important;
+    }
+    .img-batatas {
+        height: 200px!important;
+        margin-top: -328px!important;
+    }
+    .img-burguer {
+        top: 116px!important;
+        left: -230px;
+        transform: rotate( 3deg)!important;
+    }
+    #sobre-nos {
+        text-align: center;
+    }
+    .lanchonete-card {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 0px 25px;
+    }
+}

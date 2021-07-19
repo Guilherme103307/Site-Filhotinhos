@@ -159,7 +159,7 @@ button:focus:not(:focus-visible) {
 .bg-logo {
     background-image: url(../imgs/logo-filhotinhos-do-pop.png);
     height: 400px;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     margin: auto 0;
     background-size: contain;

@@ -22,6 +22,7 @@ body {
 
  ::-webkit-scrollbar-thumb {
     background: #5924EC;
+    border-radius: 20px;
 }
 
 .navbar-collapse {

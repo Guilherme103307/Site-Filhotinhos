@@ -581,7 +581,7 @@ button:focus:not(:focus-visible) {
     text-align: center;
     float: right;
     margin-top: -11px;
-    justify-items: flex-end;
+    font-weight: 600;
     font-size: 10px;
     margin-right: -23px;
     border-radius: 200px 200px 0px 0px;

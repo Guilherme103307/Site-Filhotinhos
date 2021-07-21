@@ -749,6 +749,9 @@ a:hover .filter-jogos {
     .filter-roupas {
         height: 740px!important;
     }
+    .home-feature {
+        margin-top: -160px!important;
+    }
 }
 
 @media only screen and (min-width: 767px) {
@@ -790,7 +793,7 @@ a:hover .filter-jogos {
         height: 76vh;
     }
     .home-feature {
-        margin-top: -160px;
+        margin-top: -70px;
     }
     .bg-logo {
         height: 290px;

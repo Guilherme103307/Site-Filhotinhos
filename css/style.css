@@ -28,6 +28,11 @@ body {
     margin-left: 20px;
 }
 
+.topico-card-desc {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
 a,
 .navbar,
 .navbar a,
@@ -55,11 +60,11 @@ a {
       ========================================================================== */
 
 .banner-principal {
-    background-image: url(../imgs/bg-filhotinhos-do-pop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-image: url(../imgs/bg-2-filhotinhos-do-pop.png);
 }
 
 button:focus:not(:focus-visible) {
@@ -567,6 +572,24 @@ button:focus:not(:focus-visible) {
 /* ==========================================================================
       COTAS
       ========================================================================== */
+
+.tag {
+    background-color: #dc3545;
+    color: #FFF;
+    transform: rotate( 45deg);
+    width: 119px;
+    text-align: center;
+    float: right;
+    margin-top: -11px;
+    justify-items: flex-end;
+    font-size: 10px;
+    margin-right: -23px;
+    border-radius: 200px 200px 0px 0px;
+}
+
+.obs {
+    font-size: 0.8rem;
+}
 
 #cotas .lanchonete-card {
     padding: 0;

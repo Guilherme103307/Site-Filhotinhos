@@ -1,6 +1,40 @@
 /* ==========================================================================
     GERAL
 ========================================================================== */
+.mc-modal{
+    width: 900px;
+}
+
+.strictContent.m {
+    background-color: #c9e8f9!important;
+}
+
+.strictContent h2 {
+    color: #252d69 !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+}
+
+
+.content__formFields input{
+    background-color: #5bb3e4 !important;
+    border: none !important;
+    border-radius: unset !important;
+    color: #fff !important;
+    height: 40px!important;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.strictContent .button {
+    background-color: #0F2C65!important;
+    font-weight: 600!important;
+    height: 28px!important;
+    float: right;
+    line-height: 1.2;
+    border-radius: 0!important;
+}
+
 
 body {
     font-family: 'Poppins', sans-serif!important;
